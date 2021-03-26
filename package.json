@@ -11,7 +11,7 @@
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\"",
     "build:win-ia32": "electron-builder build --win --ia32",
-    "build:win": "electron-builder build --win --publish never"
+    "build:win": "electron-builder build --win"
   },
   "keywords": [],
   "author": {
@@ -47,7 +47,8 @@
     }
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^4.3.8"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.54",
