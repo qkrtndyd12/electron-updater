@@ -1,0 +1,3 @@
+publish:
+  provider: github
+  token: 6fedff039084abfabe7962b9cd3c60417ca62195
