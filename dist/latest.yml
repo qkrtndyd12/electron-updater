@@ -1,8 +1,8 @@
-version: 1.0.1
+version: 1.0.2
 files:
-  - url: electron-updater-setup-1.0.1.exe
-    sha512: zdCas2hjtisdzHQTF3hsq3G0U0fje1Js6P75J5d7KjQDzmFUQbvyTFXEywew5D8iopKATP/E5i1E/LOWbsmnNQ==
-    size: 58901226
-path: electron-updater-setup-1.0.1.exe
-sha512: zdCas2hjtisdzHQTF3hsq3G0U0fje1Js6P75J5d7KjQDzmFUQbvyTFXEywew5D8iopKATP/E5i1E/LOWbsmnNQ==
-releaseDate: '2021-03-29T00:03:28.691Z'
+  - url: electron-updater-setup-1.0.2.exe
+    sha512: sZFs2xpfQMppep70ouBM1b5swJvosh0QN0tVelhYnl5H134oPIKFrV8Lpwp+lYVmq78ibeSy5HutW5rwQpRuzA==
+    size: 58901268
+path: electron-updater-setup-1.0.2.exe
+sha512: sZFs2xpfQMppep70ouBM1b5swJvosh0QN0tVelhYnl5H134oPIKFrV8Lpwp+lYVmq78ibeSy5HutW5rwQpRuzA==
+releaseDate: '2021-03-29T00:19:00.782Z'
