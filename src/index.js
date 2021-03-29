@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+const { autoUpdater } = require("electron-updater");
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -46,13 +47,8 @@ app.on('activate', () => {
 // code. You can also put them in separate files and import them here.
 
 
-const { autoUpdater } = require("electron-updater");
 
 let updateWin;
-
-function sendStatusToWindow(text) {
-  updateWin.webContents.send("message", text);
-}
 
 function createDefaultUpdaetWindow() {
   updateWin = new BrowserWindow({
@@ -67,6 +63,17 @@ function createDefaultUpdaetWindow() {
   return updateWin;
 }
 
+function sendStatusToWindow(text) {
+  updateWin.webContents.send("message", text);
+}
+
+app.on("ready", async () => {
+  createDefaultUpdaetWindow();
+  autoUpdater.checkForUpdates();
+
+  
+  updateWin.webContents.send("message", "test message...");
+});
 autoUpdater.on("checking-for-update", () => {
   sendStatusToWindow("Checking for update...");
 });
@@ -100,9 +107,4 @@ autoUpdater.on("update-downloaded", (info) => {
   if(btnIndex === 0) {
     autoUpdater.quitAndInstall();
   }
-});
-
-app.on("ready", async () => {
-  createDefaultUpdaetWindow();
-  autoUpdater.checkForUpdates();
 });
