@@ -1,7 +1,7 @@
 {
   "name": "electron-updater",
   "productName": "electron-updater",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
@@ -67,9 +67,9 @@
     },
     "nsis": {
       "oneClick": true,
-      "shortcutName": "Builder 테스트 프로그램",
-      "artifactName": "Builder 테스트 프로그램 ${version}.${ext}",
-      "uninstallDisplayName": "Builder 테스트 프로그램"
+      "shortcutName": "electron-updater",
+      "artifactName": "electron-updater ${version}.${ext}",
+      "uninstallDisplayName": "electron-updater"
     }
   },
   "repository": {
